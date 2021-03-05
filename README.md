@@ -32,9 +32,9 @@
   </ol>
 </details>
 
-<br>
-<br>
-<br>
+<br />
+<br />
+<br />
 
 <!-- Imperative -->
 ## Imperative
@@ -55,7 +55,8 @@ Imperative way to run commands with kubectl.
 
 
 
-
+<br />
+<br />
 
 <!-- Declarative -->
 ## Declarative
