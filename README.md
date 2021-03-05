@@ -52,9 +52,11 @@ Imperative way to run commands with kubectl.
 <pre><code>kubectl get pod -owide --selector=$label</code></pre>
 
 
+
+
+<br>
+<br>
 <!-- Declarative -->
-<br>
-<br>
 ## Declarative
 Declarative way to create, modify objects or anything in k8s.
 
