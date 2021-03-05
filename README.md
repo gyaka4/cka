@@ -43,8 +43,11 @@ Imperative way to run commands with kubectl.
 
 ### Getting info
 
-get info of xy
+* List pods showing their labels
+<pre><code>kubectl get pods --show-labels</code></pre>
 
+* List pods with specific label
+<pre><code>kubectl get pod -owide --selector=$label</code></pre>
 
 
 <!-- Declarative -->
