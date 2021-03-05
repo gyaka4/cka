@@ -44,7 +44,7 @@ Imperative way to run commands with kubectl.
 ### Getting info
 
 * List pods showing their labels
-<pre><code>kubectl get pods --show-labels</code></pre>
+<pre><code>kubectl get pod --show-labels</code></pre>
 
 * List pods with specific label
 <pre><code>kubectl get pod -owide --selector=$label</code></pre>
