@@ -53,6 +53,8 @@ Imperative way to run commands with kubectl.
 
 
 <!-- Declarative -->
+<br>
+<br>
 ## Declarative
 Declarative way to create, modify objects or anything in k8s.
 
