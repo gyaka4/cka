@@ -48,20 +48,27 @@ get info of xy
 
 <!-- Declarative -->
 ## Declarative
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Declarative way to create, modify objects or anything in k8s.
 
 ### Creating Pods
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+
 
 ### Controllers and Services
 
+
+## Templates
+Please contribute using the templates below.
+* Showing files
+<pre><code>Please ...First line
+...Second line
+paste the file content here
+</code></pre>
+
+* One line commands
+<pre><code>this is an example command</code></pre>
+
+* Step-by-steps
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
@@ -75,34 +82,6 @@ This is an example of how to list things you need to use the software and how to
    ```JS
    const API_KEY = 'ENTER YOUR API';
    ```
-
-
-## Templates
-Please contribute using the templates below.
-* Showing files
-<pre><code>
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: nginx-deployment
-  labels:
-    app: nginx
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: nginx
-  template:
-    metadata:
-      labels:
-        app: nginx
-    spec:
-      containers:
-      - name: nginx
-        image: nginx:1.14.2
-        ports:
-        - containerPort: 80
-</code></pre>
 
 
 
