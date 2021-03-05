@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <a href="#kb-for-cka">
+    <a href="#kb-for-cka-exam">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
     </a>
 
