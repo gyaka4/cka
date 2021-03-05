@@ -28,6 +28,7 @@
       </ul>
     </li>
     <li><a href="#templates">Templates</a></li>
+      <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
