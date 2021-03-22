@@ -92,25 +92,10 @@ spec:
     effect: "NoSchedule"
 </code></pre>
 
+
+
 * Create deployment with NodeAffinity
-<pre><code>apiVersion: v1
-kind: Pod
-metadata:
-  creationTimestamp: null
-  labels:
-    run: nginx
-  name: nginx
-spec:
-  containers:
-  - image: nginx
-    name: nginx
-    resources: {}
-  dnsPolicy: ClusterFirst
-  restartPolicy: Always
-status: {}
-hadmin@master:~$ c^Ct pod.yaml
-hadmin@master:~$ kubectl create deployment nginx --image=nginx --dry-run=client -o yaml
-apiVersion: apps/v1
+<pre><code>apiVersion: apps/v1
 kind: Deployment
 metadata:
   creationTimestamp: null
@@ -129,7 +114,7 @@ spec:
       labels:
         app: nginx
     spec:
-	  affinity:
+      affinity:
         nodeAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
             nodeSelectorTerms:
