@@ -22,7 +22,7 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Declarative</a>
+      <a href="#Declarative">Declarative</a>
       <ul>
         <li><a href="#creating-pods">Creating Pods</a></li>
         <li><a href="#controllers-and-services">Controllers and Services</a></li>
@@ -73,9 +73,8 @@ Declarative way to create, modify objects or anything in k8s.
 
 ### Creating Pods
 
-* Create pod with taint
-<pre><code>#example-yaml
-apiVersion: v1
+* Create pod with taint toleration
+<pre><code>apiVersion: v1
 kind: Pod
 metadata:
   name: nginx
