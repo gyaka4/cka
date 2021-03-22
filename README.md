@@ -56,6 +56,10 @@ Imperative way to run commands with kubectl.
 * Remove default taint from master nodes
 <pre><code>kubectl taint nodes --all node-role.kubernetes.io/master-</code></pre>
 
+* Add taint to a node
+<pre><code>kubectl taint nodes node1 key1=value1:NoSchedule</code></pre>
+
+
 
 
 
@@ -69,6 +73,25 @@ Declarative way to create, modify objects or anything in k8s.
 
 ### Creating Pods
 
+* Create pod with taint
+<pre><code>#example-yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    env: test
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    imagePullPolicy: IfNotPresent
+  tolerations:
+  - key: "example-key"
+    operator: "Equals"
+    value: "example-value"
+    effect: "NoSchedule"
+</code></pre>
 
 
 ### Controllers and Services
