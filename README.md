@@ -17,7 +17,8 @@
     <li>
       <a href="#imperative">Imperative</a>
       <ul>
-        <li><a href="#getting-info">Getting info</a></li>
+        <li><a href="#pods">Pods</a></li>
+        <li><a href="#nodes">Nodes</a></li>
       </ul>
     </li>
     <li>
@@ -43,13 +44,17 @@
 Imperative way to run commands with kubectl.
 
 
-### Getting info
+### Pods
 
 * List pods showing their labels
 <pre><code>kubectl get pod --show-labels</code></pre>
 
 * List pods with specific label
 <pre><code>kubectl get pod -owide --selector=$label</code></pre>
+
+### Nodes
+* Remove default taint from master nodes
+<pre><code>kubectl taint nodes --all node-role.kubernetes.io/master-</code></pre>
 
 
 
